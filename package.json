@@ -1,0 +1,36 @@
+{
+  "name": "storeeing",
+  "version": "1.0.0",
+  "description": "This is an S3/Cloudinary Wrapper build by Jatan Dudeja.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "watch": "npx tsc -w",
+    "dev": "nodemon dist/index.js",
+    "start:dev": "concurrently \"npx tsc -w\" \"npx tsc\" \"nodemon dist/index.js\""
+  },
+  "author": "Jatan Dudeja",
+  "license": "ISC",
+  "dependencies": {
+    "@sequelize/mysql": "^7.0.0-alpha.43",
+    "@types/bcrypt": "^5.0.2",
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^2.5.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.3",
+    "path": "^0.12.7",
+    "sequelize": "^6.37.4"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.7",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/multer": "^1.4.12",
+    "concurrently": "^9.0.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
